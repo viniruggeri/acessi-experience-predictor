@@ -1,10 +1,11 @@
 # acessi-experience-predictor
 Acessi Experience Predictor — API Flask e pipeline de Machine Learning para prever a nota de experiência dos passageiros no transporte público. Projeto acadêmico desenvolvido
 
+---
 
 # Projeto Acessi - Previsão de Nota de Experiência
 
-Este arquivo contém a implementação da **Sprint 4** do Projeto Acessi: um pipeline de machine learning para prever a nota de experiência de passageiros de metrô, deploy como API Flask e uma interface web simples para consulta.
+Este arquivo um pipeline de machine learning para prever a nota de experiência de passageiros de metrô, deploy como API Flask e uma interface web simples para consulta.
 
 ---
 
