@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessi - Previsão de Experiência do Passageiro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-subway"></i>
+                <h1>Acessi</h1>
+            </div>
+            <p class="tagline">Previsão da experiência do passageiro com inteligência artificial</p>
+        </header>
+
+        <!DOCTYPE html>
+
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Acessi - Previsão de Experiência do Passageiro</title>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+        <body>
+        ```
+            <main>
+                <div class="card">
+                    <h2>Formulário de Previsão</h2>
+                    <p class="subtitle">Preencha os dados abaixo para prever sua nota de experiência</p>
+        
+                    <form id="prediction-form">
+                        <!-- Faixa Etária -->
+                        <div class="form-group">
+                            <label for="faixa_etaria">Faixa Etária</label>
+                            <select id="faixa_etaria" name="Faixa Etária" required>
+                                <option value="" disabled selected>Selecione sua faixa etária</option>
+                                <option value="Menor de 18">Menor de 18</option>
+                                <option value="18-25">18-25</option>
+                                <option value="26-35">26-35</option>
+                                <option value="36-45">36-45</option>
+                                <option value="46-60">46-60</option>
+                                <option value="Acima de 60">Acima de 60</option>
+                            </select>
+                        </div>
+        
+                        <!-- Frequência de uso -->
+                        <div class="form-group">
+                            <label for="frequencia">Frequência de uso do metrô</label>
+                            <select id="frequencia" name="Frequência de uso" required>
+                                <option value="" disabled selected>Selecione a frequência</option>
+                                <option value="Diariamente">Diariamente</option>
+                                <option value="Semanalmente">Semanalmente</option>
+                                <option value="Raramente">Raramente</option>
+                            </select>
+                        </div>
+        
+                        <!-- Necessidade de acessibilidade -->
+                        <div class="form-group">
+                            <label for="acessibilidade">Necessidade de acessibilidade</label>
+                            <select id="acessibilidade" name="Necessidade de Acessibilidade" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+        
+                        <!-- Horário de uso -->
+                        <div class="form-group">
+                            <label for="horario">Horário de uso</label>
+                            <select id="horario" name="Horários de Uso" required>
+                                <option value="" disabled selected>Selecione o horário</option>
+                                <option value="Manhã">Manhã</option>
+                                <option value="Tarde">Tarde</option>
+                                <option value="Noite">Noite</option>
+                                <option value="Horário de pico">Horário de pico</option>
+                            </select>
+                        </div>
+        
+                        <!-- Problemas enfrentados -->
+                        <div class="form-group">
+                            <label>Problemas enfrentados</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="problem_delay" name="Problemas Enfrentados" value="Atraso">
+                                    <label for="problem_delay">Atraso</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="problem_crowding" name="Problemas Enfrentados" value="Lotação">
+                                    <label for="problem_crowding">Lotação</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="problem_accessibility" name="Problemas Enfrentados" value="Falta de acessibilidade">
+                                    <label for="problem_accessibility">Falta de acessibilidade</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="problem_information" name="Problemas Enfrentados" value="Informações insuficientes">
+                                    <label for="problem_information">Informações insuficientes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="problem_security" name="Problemas Enfrentados" value="Segurança">
+                                    <label for="problem_security">Segurança</label>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Reação a problemas -->
+                        <div class="form-group">
+                            <label for="reacao">Reação a problemas</label>
+                            <select id="reacao" name="Reação a problemas" required>
+                                <option value="" disabled selected>Selecione sua reação</option>
+                                <option value="Aguardo">Aguardo</option>
+                                <option value="Procuro alternativa">Procuro alternativa</option>
+                                <option value="Desisto da viagem">Desisto da viagem</option>
+                            </select>
+                        </div>
+        
+                        <!-- Planejamento de viagem -->
+                        <div class="form-group">
+                            <label for="planejamento">Planejamento de viagem</label>
+                            <select id="planejamento" name="Planejamento de viagem" required>
+                                <option value="" disabled selected>Selecione como planeja</option>
+                                <option value="Planejo com apps">Planejo com apps</option>
+                                <option value="Planejo antes de sair">Planejo antes de sair</option>
+                                <option value="Não planejo">Não planejo</option>
+                            </select>
+                        </div>
+        
+                        <!-- Tempo médio de viagem -->
+                        <div class="form-group">
+                            <label for="tempo_viagem">Tempo médio de viagem</label>
+                            <select id="tempo_viagem" name="Tempo de Viagem" required>
+                                <option value="" disabled selected>Selecione o tempo</option>
+                                <option value="Menos de 20 min">Menos de 20 min</option>
+                                <option value="20-40 min">20-40 min</option>
+                                <option value="40-60 min">40-60 min</option>
+                                <option value="Mais de 60 min">Mais de 60 min</option>
+                            </select>
+                        </div>
+        
+                        <!-- Perda de compromissos -->
+                        <div class="form-group">
+                            <label for="perdeu">Já perdeu compromissos por imprevistos?</label>
+                            <select id="perdeu" name="Perda de compromissos devido a imprevistos" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+        
+                        <!-- Uso de aplicativos -->
+                        <div class="form-group">
+                            <label for="usa_apps">Usa aplicativos de transporte?</label>
+                            <select id="usa_apps" name="Uso de aplicativos de transporte" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+        
+                        <!-- Funcionalidade mais utilizada -->
+                        <div class="form-group">
+                            <label for="funcionalidade">Funcionalidade mais utilizada nos apps</label>
+                            <select id="funcionalidade" name="Funcionalidades mais utilizadas nos apps" required>
+                                <option value="" disabled selected>Selecione a funcionalidade</option>
+                                <option value="Alertas">Alertas</option>
+                                <option value="Rotas">Rotas</option>
+                                <option value="Horários">Horários</option>
+                                <option value="Chat">Chat</option>
+                                <option value="Nenhuma">Nenhuma</option>
+                            </select>
+                        </div>
+        
+                        <!-- Formato preferido para alertas -->
+                        <div class="form-group">
+                            <label for="formato_alerta">Formato preferido para alertas</label>
+                            <select id="formato_alerta" name="Formato preferido para receber alertas" required>
+                                <option value="" disabled selected>Selecione o formato</option>
+                                <option value="Notificação">Notificação</option>
+                                <option value="E-mail">E-mail</option>
+                                <option value="SMS">SMS</option>
+                                <option value="Anúncio no metrô">Anúncio no metrô</option>
+                            </select>
+                        </div>
+        
+                        <!-- Experiência com assistentes virtuais -->
+                        <div class="form-group">
+                            <label for="exp_assistente">Experiência com assistentes virtuais</label>
+                            <select id="exp_assistente" name="Experiência com assistentes virtuais" required>
+                                <option value="" disabled selected>Selecione sua experiência</option>
+                                <option value="Boa">Boa</option>
+                                <option value="Neutra">Neutra</option>
+                                <option value="Ruim">Ruim</option>
+                                <option value="Nunca usei">Nunca usei</option>
+                            </select>
+                        </div>
+        
+                        <button type="submit" class="btn-predict">
+                            <span>Prever Nota de Experiência</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+        
+                <div class="result-card" id="result-section">
+                    <h2>Resultado da Previsão</h2>
+                    <div class="result-placeholder" id="placeholder">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Preencha o formulário e clique em "Prever Nota de Experiência" para ver o resultado.</p>
+                    </div>
+                    <div class="result-content" id="result-content" style="display: none;">
+                        <div class="score-container">
+                            <div class="score">
+                                <span class="score-value" id="score-value"></span>
+                                <span class="score-max">/5</span>
+                            </div>
+                            <p class="score-label">Nota Prevista</p>
+                        </div>
+                        <div class="score-details" id="score-details">
+                            <!-- Descrição dinâmica -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <footer>
+                <p>&copy; 2025 Acessi - Todos os direitos reservados</p>
+                <p>Desenvolvido com <i class="fas fa-heart"></i> para melhorar a experiência no transporte público</p>
+            </footer>
+        </div>
+        
+        <script>
+        document.getElementById('prediction-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const data = {};
+            new FormData(form).forEach((value, key) => {
+                if (data[key]) {
+                    data[key] = Array.isArray(data[key]) ? [...data[key], value] : [data[key], value];
+                } else {
+                    data[key] = value;
+                }
+            });
+        
+            const response = await fetch('http://127.0.0.1:5000/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+            const score = result.nota_prevista;
+        
+            document.getElementById('placeholder').style.display = 'none';
+            document.getElementById('result-content').style.display = 'block';
+            document.getElementById('score-value').innerText = score;
+            document.getElementById('score-details').innerHTML = `
+                <h3>Análise da Previsão</h3>
+                <p>Com base nos dados fornecidos, nossa IA prevê que sua experiência no transporte público seria avaliada com nota ${score}. Aqui estão alguns fatores que influenciaram esta previsão:</p>
+                <ul>
+                    <li>Planejamento de viagem: ${data['Planejamento de viagem']}</li>
+                    <li>Horário de uso: ${data['Horários de Uso']}</li>
+                    <li>Uso de aplicativos: ${data['Uso de aplicativos de transporte']}</li>
+                </ul>
+            `;
+        });
+        </script>
+        ```
+        
+        </body>
+        </html>
+        
